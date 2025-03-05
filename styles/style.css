@@ -2,131 +2,157 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Arial", sans-serif;
 }
 
 body {
-  background-color: #f4f6f8;
-  color: #2c3e50;
+  background-color: #f5f5f5;
   line-height: 1.6;
   font-size: 1rem;
 }
 
 header {
-  background-color: #2c3e50;
-  color: #fff;
+  background-image: url("/images/portfolio-background.jpg");
+  background-size: 120%;
+  background-position: center;
   text-align: center;
   padding: 40px 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 7%;
 }
 header h1 {
-  font-size: 2.5rem;
-  font-weight: 600;
-  letter-spacing: 1px;
+  color: #FFF2F2;
+  font-size: 50px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  font-family: "Bebas Neue", sans-serif;
 }
 
 #about {
-  background-color: #ecf0f1;
-  color: #34495e;
+  background-color: #f5f5f5;
   padding: 50px 20px;
 }
 #about h2 {
-  font-size: 2rem;
-  font-weight: 500;
+  font-size: 60px;
+  font-weight: 400;
   margin-bottom: 20px;
   text-align: center;
-  color: #2980b9;
+  color: #2D336B;
+  font-family: "Bebas Neue", sans-serif;
 }
 #about p {
-  font-size: 1.125rem;
+  font-family: "Playfair", serif;
+  font-size: 30px;
   line-height: 1.6;
-  max-width: 900px;
+  max-width: 1400px;
   margin: 0 auto;
   text-align: center;
   color: #34495e;
 }
 
 #experience {
-  background-color: #f4f6f8;
-  color: #34495e;
   padding: 50px 20px;
 }
 #experience h2 {
-  font-size: 2rem;
-  font-weight: 500;
+  font-size: 60px;
+  font-weight: 400;
   margin-bottom: 20px;
   text-align: center;
-  color: #2980b9;
+  color: #2D336B;
+  font-family: "Bebas Neue", sans-serif;
 }
 #experience p {
-  font-size: 1.125rem;
+  font-family: "Playfair", serif;
+  font-size: 30px;
   line-height: 1.6;
-  max-width: 900px;
+  max-width: 1400px;
   margin: 0 auto;
   text-align: center;
   color: #34495e;
   margin-bottom: 20px;
 }
 
-#work {
-  padding: 50px 20px;
-  background-color: #ecf0f1;
-}
-#work h2 {
-  font-size: 2rem;
-  font-weight: 500;
+#work h3 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 60px;
+  font-weight: 400;
   margin-bottom: 20px;
   text-align: center;
-  color: #2980b9;
+  color: #2D336B;
+  margin-bottom: 20px;
 }
-#work h3 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
+#work .projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+#work .projects-container .project-card {
+  background: #A9B5DF;
+  padding: 70px;
+  border-radius: 7px;
+  width: 300px;
   text-align: center;
-  color: #2980b9;
+  transition: transform 0.3s ease-in-out;
+  margin: 10px;
 }
-#work ul {
-  list-style-type: none;
-  padding: 0;
-  text-align: center;
-}
-#work ul li {
-  font-size: 1.125rem;
+#work .projects-container .project-card h4 {
+  font-family: "Bebas Neue", sans-serif;
   margin-bottom: 10px;
+  font-size: 40px;
+  color: #f0e5e5;
+  letter-spacing: 2px;
 }
-#work ul li strong {
-  color: #2980b9;
+#work .projects-container .project-card p {
+  font-size: 20px;
+  color: #000000;
+  font-family: "Playfair", serif;
 }
-#work ul li a {
+#work .projects-container .project-card a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 12px;
+  background: #2D336B;
+  color: white;
   text-decoration: none;
-  color: #2980b9;
-  font-weight: 500;
+  border-radius: 5px;
+  transition: 0.3s ease-in-out;
 }
-#work ul li a:hover {
-  text-decoration: underline;
+#work .projects-container .project-card a:hover {
+  background: #5467bd;
+}
+#work .projects-container .project-card:hover {
+  transform: translateY(-5px);
 }
 
 #contact {
   padding: 50px 20px;
-  background-color: #fff;
 }
 #contact h2 {
-  font-size: 2rem;
-  font-weight: 500;
+  font-size: 60px;
+  font-weight: 400;
   margin-bottom: 20px;
   text-align: center;
-  color: #2980b9;
+  color: #2D336B;
+  font-family: "Bebas Neue", sans-serif;
 }
 #contact p {
-  font-size: 1.125rem;
+  font-family: "Playfair", serif;
+  font-size: 30px;
   line-height: 1.6;
+  max-width: 1400px;
+  margin: 0 auto;
   text-align: center;
   color: #34495e;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 #contact form {
   max-width: 600px;
   margin: 0 auto;
-  background-color: #ecf0f1;
+  padding: 20px;
+  background-color: #A9B5DF;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -151,7 +177,7 @@ header h1 {
 }
 #contact form button {
   display: inline-block;
-  background-color: #2980b9;
+  background-color: #2D336B;
   color: #fff;
   padding: 12px 20px;
   font-size: 1.125rem;
@@ -162,5 +188,5 @@ header h1 {
   text-align: center;
 }
 #contact form button:hover {
-  background-color: #3498db;
+  background: #5467bd;
 }/*# sourceMappingURL=style.css.map */

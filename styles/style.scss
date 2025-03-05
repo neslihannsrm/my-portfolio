@@ -1,51 +1,64 @@
-// Genel stil ayarları
+ 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Arial', sans-serif;
+  
 }
 
-// Body genel ayarları
+
 body {
-  background-color: #f4f6f8;
-  color: #2c3e50;
+  background-color: #f5f5f5;
   line-height: 1.6;
   font-size: 1rem;
 }
 
-// Header kısmı
 header {
-  background-color: #2c3e50;
-  color: #fff;
+  background: {
+      image: url('/images/portfolio-background.jpg');
+      size: 120%; 
+      position: center;
+  }
+  
   text-align: center;
   padding: 40px 0;
+  min-height: 100vh; 
+  display: flex;
+  align-items: center; 
+  justify-content: flex-start;
+  padding-left: 7%;
 
   h1 {
-    font-size: 2.5rem;
-    font-weight: 600;
-    letter-spacing: 1px;
+    color: #FFF2F2;
+    font-size: 50px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-family: "Bebas Neue", sans-serif;
+    
   }
 }
 
+
+
 // About Section
 #about {
-  background-color: #ecf0f1;
-  color: #34495e;
+  background-color: #f5f5f5;
   padding: 50px 20px;
 
   h2 {
-    font-size: 2rem;
-    font-weight: 500;
+    font-size: 60px;
+    font-weight: 400;
     margin-bottom: 20px;
     text-align: center;
-    color: #2980b9;
+    color: #2D336B;
+    font-family: "Bebas Neue", sans-serif;
   }
 
   p {
-    font-size: 1.125rem;
+    font-family: "Playfair", serif;
+    font-size: 30px;
     line-height: 1.6;
-    max-width: 900px;
+    max-width: 1400px;
     margin: 0 auto;
     text-align: center;
     color: #34495e;
@@ -54,22 +67,22 @@ header {
 
 // Experience Section
 #experience {
-  background-color: #f4f6f8;
-  color: #34495e;
   padding: 50px 20px;
 
   h2 {
-    font-size: 2rem;
-    font-weight: 500;
+    font-size: 60px;
+    font-weight: 400;
     margin-bottom: 20px;
     text-align: center;
-    color: #2980b9;
+    color: #2D336B;
+    font-family: "Bebas Neue", sans-serif;
   }
 
   p {
-    font-size: 1.125rem;
+    font-family: "Playfair", serif;
+    font-size: 30px;
     line-height: 1.6;
-    max-width: 900px;
+    max-width: 1400px;
     margin: 0 auto;
     text-align: center;
     color: #34495e;
@@ -79,75 +92,98 @@ header {
 
 // Work Section (for Projects)
 #work {
-  padding: 50px 20px;
-  background-color: #ecf0f1;
-
-  h2 {
-    font-size: 2rem;
-    font-weight: 500;
-    margin-bottom: 20px;
-    text-align: center;
-    color: #2980b9;
-  }
-
   h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    text-align: center;
-    color: #2980b9;
+      font-family: "Bebas Neue", sans-serif;
+      font-size: 60px;
+      font-weight: 400;
+      margin-bottom: 20px;
+      text-align: center;
+      color: #2D336B;
+      margin-bottom: 20px;
   }
 
-  ul {
-    list-style-type: none;
-    padding: 0;
-    text-align: center;
+  .projects-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
 
-    li {
-      font-size: 1.125rem;
-      margin-bottom: 10px;
+      .project-card {
+          background: #A9B5DF;
+          padding: 70px;
+          border-radius: 7px;
+          width: 300px;
+          text-align: center;
+          transition: transform 0.3s ease-in-out;
+          margin: 10px;
 
-      strong {
-        color: #2980b9;
+          h4 {
+            font-family: "Bebas Neue", sans-serif;
+              margin-bottom: 10px;
+              font-size: 40px;
+              color: #f0e5e5;
+              letter-spacing: 2px;
+              
+          }
+
+          p {
+              font-size: 20px;
+              color: #000000;
+              font-family: "Playfair", serif;
+          }
+
+          a {
+              display: inline-block;
+              margin-top: 10px;
+              padding: 8px 12px;
+              background: #2D336B;
+              color: white;
+              text-decoration: none;
+              border-radius: 5px;
+              transition: 0.3s ease-in-out;
+
+              &:hover {
+                  background: #5467bd;
+              }
+          }
+
+          &:hover {
+              transform: translateY(-5px);
+          }
       }
-
-      a {
-        text-decoration: none;
-        color: #2980b9;
-        font-weight: 500;
-      }
-
-      a:hover {
-        text-decoration: underline;
-      }
-    }
   }
 }
+
 
 // Contact Section
 #contact {
   padding: 50px 20px;
-  background-color: #fff;
 
   h2 {
-    font-size: 2rem;
-    font-weight: 500;
+    font-size: 60px;
+    font-weight: 400;
     margin-bottom: 20px;
     text-align: center;
-    color: #2980b9;
+    color: #2D336B;
+    font-family: "Bebas Neue", sans-serif;
   }
 
   p {
-    font-size: 1.125rem;
+    font-family: "Playfair", serif;
+    font-size: 30px;
     line-height: 1.6;
+    max-width: 1400px;
+    margin: 0 auto;
     text-align: center;
     color: #34495e;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 
   form {
     max-width: 600px;
     margin: 0 auto;
-    background-color: #ecf0f1;
+    padding: 20px;
+    background-color: #A9B5DF;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -175,7 +211,7 @@ header {
 
     button {
       display: inline-block;
-      background-color: #2980b9;
+      background-color: #2D336B;
       color: #fff;
       padding: 12px 20px;
       font-size: 1.125rem;
@@ -187,7 +223,7 @@ header {
     }
 
     button:hover {
-      background-color: #3498db;
+      background: #5467bd;
     }
   }
 }
