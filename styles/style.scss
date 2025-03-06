@@ -244,70 +244,158 @@ header {
 
 
 /* Media queries */
-@media (max-width: 768px) {
+@media (max-width: 320px) {
   header {
-    background-size: contain; 
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
   }
+
+  header h1 {
+    font-size: 24px !important;  
+  }
+
   .projects-container {
-    flex-direction: column;  
-    align-items: center;      
+    flex-direction: column;
+    align-items: center;
   }
 
   .project-card {
-    width: 90%;   
-    height: auto; 
-    padding: 20px;  
+    width: 90%;
+    height: auto;
+    padding: 15px;
   }
 
   h3 {
-    font-size: 40px;  
+    font-size: 30px !important;  
   }
 
   h4 {
-    font-size: 30px;  
+    font-size: 20px !important;  
   }
 
   .project-image {
-    height: 200px;  
+    width: 100%;
+    height: auto;
+    object-fit: cover;
   }
 
   p {
-    font-size: 16px;  
+    font-size: 14px !important;
   }
 
   a {
-    padding: 10px 16px;  
+    padding: 8px 12px;
   }
 }
 
-/* (768px - 1024px) */
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 321px) and (max-width: 768px) {
   header {
-    background-size: contain; 
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
   }
+
+  header h1 {
+    font-size: 28px !important;  
+  }
+
+  .projects-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .project-card {
-    width: 48%;  
-    height: auto;  
-    padding: 30px;  
+    width: 90%;
+    height: auto;
+    padding: 20px;
   }
 
   h3 {
-    font-size: 50px;  
+    font-size: 35px !important;
   }
 
   h4 {
-    font-size: 35px;  
+    font-size: 25px !important;
   }
 
   .project-image {
-    height: 230px;  
+    width: 100%;
+    height: auto;
+    object-fit: cover;
   }
 
   p {
-    font-size: 18px;  
+    font-size: 15px !important;
+  }
+
+  a {
+    padding: 10px 14px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  header {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  header h1 {
+    font-size: 40px !important;  
+  }
+
+  .project-card {
+    width: 48%;
+    height: auto;
+    padding: 30px;
+  }
+
+  h3 {
+    font-size: 50px !important;
+  }
+
+  h4 {
+    font-size: 35px !important;
+  }
+
+  .project-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  p {
+    font-size: 18px !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  header {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  header h1 {
+    font-size: 50px !important;  
+  }
+
+  h3 {
+    font-size: 60px !important;
+  }
+
+  h4 {
+    font-size: 40px !important;
+  }
+
+  .project-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  p {
+    font-size: 20px !important;
   }
 }
