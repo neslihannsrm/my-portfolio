@@ -14,15 +14,14 @@ body {
 }
 
 #about, #work, #contact, #experience {
-  margin-bottom: 50px;  // Sadece #about, #work, ve #contact section'ları arasında boşluk
+  margin-bottom: 50px;  
 }
 
 header {
-  background: {
-      image: url('/images/portfolio-background.jpg');
-      size: 120%; 
-      position: center;
-  }
+  background-image: url('/images/portfolio-background.jpg');
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
   
   text-align: center;
   padding: 40px 0;
@@ -246,6 +245,11 @@ header {
 
 /* Media queries */
 @media (max-width: 768px) {
+  header {
+    background-size: contain; 
+    background-position: center;
+    background-repeat: no-repeat;
+  }
   .projects-container {
     flex-direction: column;  
     align-items: center;      
@@ -280,6 +284,11 @@ header {
 
 /* (768px - 1024px) */
 @media (min-width: 768px) and (max-width: 1024px) {
+  header {
+    background-size: contain; 
+    background-position: center;
+    background-repeat: no-repeat;
+  }
   .project-card {
     width: 48%;  
     height: auto;  
